@@ -11,8 +11,12 @@ public class DynamicNode {
         System.out.println("This is node2 " + node2.value);
         System.out.println("This is node2 " + node2.next);
 
-        Node node3 = new Node(13, node2);
-        System.out.println("This is node3 " + node3.value);
-        System.out.println("This is node3 " + node3.next);
+        Node node3 = new Node(22, new Node(23, null));
+
+        Node node4 = new Node(13, node3);
+        System.out.println("This is node4 " + node4.value);
+        System.out.println("This is node4 " + node4.next);
+        System.out.println("This is node3 value " + node4.next.value);
+        System.out.println("This is node3 new node value " + node4.next.next.value);
     }
 }
