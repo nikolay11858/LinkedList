@@ -18,5 +18,12 @@ public class DynamicNode {
         System.out.println("This is node4 " + node4.next);
         System.out.println("This is node3 value " + node4.next.value);
         System.out.println("This is node3 new node value " + node4.next.next.value);
+
+        LinkNode node5 = new LinkNode(100);
+        node5.add(200);
+        node5.add(500);
+        node5.add(2005);
+
+        node5.print();
     }
 }
